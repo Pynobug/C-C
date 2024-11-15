@@ -36,3 +36,25 @@ CREATE TABLE IF NOT EXISTS `address` (
 ) ENGINE=InnoDB AUTO_INCREMENT=64 DEFAULT CHARSET=utf8mb3 ROW_FORMAT=COMPACT;
 ```
 
+
+
+
+
+
+
+## 2024/11/15
+
+### 1. User Model
+
+#### 1.1 Login
+
+- **postman test**
+
+![](images/2024-11-15-001.PNG)
+
+- **Swagger**
+
+![](images/2024-11-15-002.PNG)
+
+
+

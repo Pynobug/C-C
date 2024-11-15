@@ -1,0 +1,60 @@
+server:
+  port: 8081
+
+
+spring:
+  application:
+    name: user-service
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:mysql://${cc.db.host}:3306/cc-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: ${cc.db.pw}
+
+
+mybatis-plus:
+  configuration:
+    default-enum-type-handler: com.baomidou.mybatisplus.core.handlers.MybatisEnumTypeHandler
+  global-config:
+    db-config:
+      update-strategy: not_null
+      id-type: auto
+
+knife4j:
+  enable: true
+  openapi:
+    title: CC User interface document
+    description: "Login User document"
+    email: 906713420@qq.com
+    concat: pynobug
+    url: https://www.cc.cn
+    version: v1.0.0
+    group:
+      default:
+        group-name: default
+        api-rule: package
+        api-rule-resources:
+          - com.cc.controller
+
+logging:
+  level:
+    com.cc: debug
+  pattern:
+    dateformat: HH:mm:ss:SSS
+  file:
+    path: "logs/${spring.application.name}"
+
+cc:
+  jwt:
+    location: classpath:ccmall.jks
+    alias: ccmall
+    password: hmall123
+    tokenTTL: 30m
+  auth:
+    excludePaths:
+      - /search/**
+      - /users/login
+      - /items/**
+      - /hi

@@ -1,0 +1,4 @@
+cc:
+  db:
+    host: localhost
+    pw: root
