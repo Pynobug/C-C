@@ -5,6 +5,7 @@ import com.cc.common.exception.BadRequestException;
 import com.cc.common.exception.ForbiddenException;
 import com.cc.config.JwtProperties;
 import com.cc.domain.dto.LoginFormDTO;
+import com.cc.domain.dto.RegisterFormDTO;
 import com.cc.domain.po.User;
 import com.cc.domain.vo.UserLoginVO;
 import com.cc.enums.UserStatus;
@@ -17,6 +18,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
 
+import java.time.LocalDateTime;
+
 @Slf4j
 @Service
 @RequiredArgsConstructor
@@ -27,6 +30,39 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
     private final JwtTool jwtTool;
 
     private final JwtProperties jwtProperties;
+
+    @Override
+    public Boolean register(RegisterFormDTO registerFormDTO) {
+        String username = registerFormDTO.getUsername();
+        String password = registerFormDTO.getPassword();
+        String confirmPassword = registerFormDTO.getConfirmPassword();
+        String phone = registerFormDTO.getPhone();
+
+        // 1. Check if passwords match
+        if (!password.equals(confirmPassword)) {
+            throw new BadRequestException("Passwords do not match");
+        }
+
+        // 2. Check if username already exists
+        User existingUser = lambdaQuery().eq(User::getUsername, username).one();
+        if (existingUser != null) {
+            throw new BadRequestException("Username already exists");
+        }
+
+        // 3. Create new user
+        User newUser = new User();
+        newUser.setUsername(username)
+                .setPassword(passwordEncoder.encode(password)) // Encrypt password
+                .setPhone(phone)
+                .setStatus(UserStatus.NORMAL) // Set default status
+                .setBalance(0) // Set initial balance
+                .setCreateTime(LocalDateTime.now())
+                .setUpdateTime(LocalDateTime.now());
+
+        // 4. Save user to the database
+        boolean isSaved = save(newUser);
+        return isSaved;
+    }
 
     @Override
     public UserLoginVO login(LoginFormDTO loginFormDTO) {

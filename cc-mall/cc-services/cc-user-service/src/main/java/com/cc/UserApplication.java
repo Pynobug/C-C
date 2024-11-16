@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @MapperScan("com.cc.mapper")
 @SpringBootApplication
-public class CCMallApplication {
+public class UserApplication {
     public static void main(String[] args) {
-        SpringApplication.run(CCMallApplication.class, args);
+        SpringApplication.run(UserApplication.class, args);
     }
 }

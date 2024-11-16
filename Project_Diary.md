@@ -58,3 +58,26 @@ CREATE TABLE IF NOT EXISTS `address` (
 
 
 
+
+
+
+
+## 2024/11/16
+
+### 1. User Model
+
+#### 1.1 Register
+
+- **postman**
+
+![](images/2024-11-16-002.PNG)
+
+- **Swagger**
+
+![](images/2024-11-16-001.PNG)
+
+
+
+- **mysql**
+
+![](images/2024-11-16-003.PNG)

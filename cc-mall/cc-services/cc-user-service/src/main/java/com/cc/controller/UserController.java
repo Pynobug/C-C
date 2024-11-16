@@ -1,6 +1,7 @@
 package com.cc.controller;
 
 import com.cc.domain.dto.LoginFormDTO;
+import com.cc.domain.dto.RegisterFormDTO;
 import com.cc.domain.vo.UserLoginVO;
 import com.cc.service.IUserService;
 import io.swagger.annotations.Api;
@@ -16,6 +17,13 @@ import org.springframework.web.bind.annotation.*;
 public class UserController {
 
     private final IUserService userService;
+
+    @ApiOperation("User registration interface")
+    @PostMapping("register")
+    public Boolean register(@RequestBody @Validated RegisterFormDTO registerFormDTO) {
+        return userService.register(registerFormDTO);
+    }
+
 
     @ApiOperation("User login interface")
     @PostMapping("login")
