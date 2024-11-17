@@ -10,6 +10,7 @@
     <modules>
         <module>cc-services</module>
         <module>cc-common</module>
+        <module>cc-api</module>
     </modules>
 
 

@@ -13,6 +13,9 @@ spring:
     username: root
     password: ${cc.db.pw}
 
+  #cloud:
+    #nacos:
+      #server-addr: ${cc.nacos.host}:${cc.nacos.port}
 
 mybatis-plus:
   configuration:

@@ -81,3 +81,12 @@ CREATE TABLE IF NOT EXISTS `address` (
 - **mysql**
 
 ![](images/2024-11-16-003.PNG)
+
+
+
+
+
+## 2024/11/17
+
+- The null logic in user registration is implemented by tool class
+- Since microservices call each other, we use the Nacos registry and OpenFeign
