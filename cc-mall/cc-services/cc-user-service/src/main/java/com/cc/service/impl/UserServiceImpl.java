@@ -19,6 +19,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
 
 import java.time.LocalDateTime;
+import java.util.Objects;
 
 @Slf4j
 @Service
@@ -45,7 +46,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
 
         // 2. Check if username already exists
         User existingUser = lambdaQuery().eq(User::getUsername, username).one();
-        if (existingUser != null) {
+        if (Objects.nonNull(existingUser)) {
             throw new BadRequestException("Username already exists");
         }
 
