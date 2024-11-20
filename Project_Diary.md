@@ -90,3 +90,12 @@ CREATE TABLE IF NOT EXISTS `address` (
 
 - The null logic in user registration is implemented by tool class
 - Since microservices call each other, we use the Nacos registry and OpenFeign
+
+
+
+## 2024/11/20
+
+
+
+Due to the fact that many microservice modules require verification of users, we have found a way to unify the verification of user information and store it in context objects, which are passed between microservice modules during mutual calls.
+We can use Spring Gateway to implement it
