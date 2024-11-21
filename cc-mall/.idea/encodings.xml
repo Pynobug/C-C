@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/cc-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cc-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cc-gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cc-services/cc-user-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cc-services/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cc-services/src/main/resources" charset="UTF-8" />

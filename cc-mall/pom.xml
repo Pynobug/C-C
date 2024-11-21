@@ -11,6 +11,7 @@
         <module>cc-services</module>
         <module>cc-common</module>
         <module>cc-api</module>
+        <module>cc-gateway</module>
     </modules>
 
 
