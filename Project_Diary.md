@@ -99,3 +99,10 @@ CREATE TABLE IF NOT EXISTS `address` (
 
 Due to the fact that many microservice modules require verification of users, we have found a way to unify the verification of user information and store it in context objects, which are passed between microservice modules during mutual calls.
 We can use Spring Gateway to implement it
+
+
+
+
+
+## 2024/11/21
+
