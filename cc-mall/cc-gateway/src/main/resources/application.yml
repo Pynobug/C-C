@@ -1,0 +1,13 @@
+server:
+  port: 8080
+cc:
+  jwt:
+    location: classpath:ccmall.jks
+    alias: ccmall
+    password: hmall123
+    tokenTTL: 30m
+  auth:
+    excludePaths:
+      - /search/**
+      - /users/login
+      - /items/**

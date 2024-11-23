@@ -60,4 +60,3 @@ cc:
       - /search/**
       - /users/login
       - /items/**
-      - /hi
