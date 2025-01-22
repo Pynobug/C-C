@@ -53,7 +53,7 @@ cc:
   jwt:
     location: classpath:ccmall.jks
     alias: ccmall
-    password: hmall123
+    password: ccmall123
     tokenTTL: 30m
   auth:
     excludePaths:

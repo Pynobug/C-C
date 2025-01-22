@@ -1,4 +1,8 @@
 cc:
   db:
     host: localhost
-    pw: root
+    username: root
+    password: root
+  nacos:
+    host: localhost
+    port: 8848

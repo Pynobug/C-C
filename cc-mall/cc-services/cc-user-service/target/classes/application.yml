@@ -10,9 +10,12 @@ spring:
   datasource:
     url: jdbc:mysql://${cc.db.host}:3306/cc-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai
     driver-class-name: com.mysql.cj.jdbc.Driver
-    username: root
-    password: ${cc.db.pw}
+    username: ${cc.db.username}
+    password: ${cc.db.password}
 
+  cloud:
+    nacos:
+      server-addr: ${cc.nacos.host}:${cc.nacos.port}
 
 mybatis-plus:
   configuration:
@@ -57,4 +60,3 @@ cc:
       - /search/**
       - /users/login
       - /items/**
-      - /hi
