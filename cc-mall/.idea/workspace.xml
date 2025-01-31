@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4971975c-888d-4dac-a4b1-bf4bf20cfb33" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/resources/ccmall.jks" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/resources/ccmall.jks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/user-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/user-service/spring.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,6 +138,7 @@
       <workItem from="1737078247403" duration="2149000" />
       <workItem from="1737168580784" duration="3733000" />
       <workItem from="1737423362370" duration="4623000" />
+      <workItem from="1738041313228" duration="663000" />
     </task>
     <servers />
   </component>
