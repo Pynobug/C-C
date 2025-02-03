@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4971975c-888d-4dac-a4b1-bf4bf20cfb33" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introduct/技术.md" beforeDir="false" afterPath="$PROJECT_DIR$/../introduct/技术.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,6 +140,7 @@
       <workItem from="1737168580784" duration="3733000" />
       <workItem from="1737423362370" duration="4623000" />
       <workItem from="1738041313228" duration="663000" />
+      <workItem from="1738550890151" duration="1276000" />
     </task>
     <servers />
   </component>
