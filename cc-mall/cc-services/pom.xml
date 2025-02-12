@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>cc-user-service</module>
+        <module>cc-item-service</module>
     </modules>
 
     <properties>

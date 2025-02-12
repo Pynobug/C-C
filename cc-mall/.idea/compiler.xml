@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cc-common" />
+        <module name="cc-item-service" />
         <module name="cc-gateway" />
         <module name="cc-api" />
         <module name="cc-user-service" />
@@ -19,6 +20,7 @@
       <module name="cc-api" options="-parameters" />
       <module name="cc-common" options="-parameters" />
       <module name="cc-gateway" options="-parameters" />
+      <module name="cc-item-service" options="-parameters" />
       <module name="cc-mall" options="-parameters" />
       <module name="cc-services" options="-parameters" />
       <module name="cc-user-service" options="-parameters" />
