@@ -2,7 +2,7 @@ cc:
   db:
     host: 192.168.245.128
     username: root
-    password: root
+    password: 123
   nacos:
     host: 192.168.245.128
     port: 8848

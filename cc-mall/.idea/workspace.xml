@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4971975c-888d-4dac-a4b1-bf4bf20cfb33" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cc-gateway/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-user-service/target/classes/application-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/user-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/user-service/spring.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -148,6 +148,8 @@
       <workItem from="1740451948191" duration="1687000" />
       <workItem from="1740557412744" duration="231000" />
       <workItem from="1740625745747" duration="453000" />
+      <workItem from="1740626255177" duration="3936000" />
+      <workItem from="1740669356125" duration="1033000" />
     </task>
     <servers />
   </component>
