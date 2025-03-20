@@ -6,3 +6,7 @@ cc:
   nacos:
     host: 192.168.245.128
     port: 8848
+  swagger:
+    title: "用户服务接口文档"
+    desc: "用户服务接口文档"
+    package: com.cc.user.controller

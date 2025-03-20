@@ -14,7 +14,3 @@ cc:
     max-idle: 8
     min-idle: 0
     max-wait: 100
-  swagger:
-    title: "商品服务接口文档"
-    desc: "商品服务接口文档"
-    package: com.cc.item.controller
