@@ -5,4 +5,5 @@ cc:
     database: cc-item
   swagger:
     title: "商品服务接口文档"
+    desc: "商品服务接口文档"
     package: com.cc.item.controller

@@ -5,41 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4971975c-888d-4dac-a4b1-bf4bf20cfb33" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/resources/application-dev.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/domain/po/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/domain/po/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/domain/po/ItemDoc.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/domain/po/ItemDoc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/domain/query/ItemPageQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/domain/query/ItemPageQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-user-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/java/com/cc/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/java/com/cc/user/UserApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/java/com/cc/config/JwtProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/java/com/cc/user/config/JwtProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/java/com/cc/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/java/com/cc/user/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/java/com/cc/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/java/com/cc/user/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/java/com/cc/domain/dto/LoginFormDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/java/com/cc/user/domain/dto/LoginFormDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/java/com/cc/domain/dto/RegisterFormDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/java/com/cc/user/domain/dto/RegisterFormDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/java/com/cc/domain/po/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/java/com/cc/user/domain/po/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/java/com/cc/domain/vo/UserLoginVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/java/com/cc/user/domain/vo/UserLoginVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/java/com/cc/enums/UserStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/java/com/cc/user/enums/UserStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/java/com/cc/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/java/com/cc/user/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/java/com/cc/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/java/com/cc/user/service/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/java/com/cc/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/java/com/cc/user/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/java/com/cc/utils/JwtTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/java/com/cc/user/utils/JwtTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-user-service/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/target/classes/com/cc/UserApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/target/classes/com/cc/config/JwtProperties.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/target/classes/com/cc/config/SecurityConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/target/classes/com/cc/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/target/classes/com/cc/domain/dto/LoginFormDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/target/classes/com/cc/domain/dto/RegisterFormDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/target/classes/com/cc/domain/po/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/target/classes/com/cc/domain/vo/UserLoginVO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/target/classes/com/cc/enums/UserStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/target/classes/com/cc/mapper/UserMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/target/classes/com/cc/service/IUserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/target/classes/com/cc/service/impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/target/classes/com/cc/utils/JwtTool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cc-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/controller/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/service/IItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/service/IItemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/service/ISearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/service/ISearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/service/impl/ItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/service/impl/ItemServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/service/impl/SearchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/service/impl/SearchServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/resources/application-dev.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/resources/application-local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/resources/application-local.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/resources/bootstrap.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/target/classes/application-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/target/classes/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/target/classes/com/cc/item/controller/SearchController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/target/classes/com/cc/item/controller/SearchController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/target/classes/com/cc/item/service/IItemService.class" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/target/classes/com/cc/item/service/IItemService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/target/classes/com/cc/item/service/ISearchService.class" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/target/classes/com/cc/item/service/ISearchService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/target/classes/com/cc/item/service/impl/ItemServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/target/classes/com/cc/item/service/impl/ItemServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/target/classes/com/cc/item/service/impl/SearchServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/target/classes/com/cc/item/service/impl/SearchServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/resources/application-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/resources/application-local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/resources/application-local.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/resources/bootstrap.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/item-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/item-service/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/item-service/spring.log.2025-03-02.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/item-service/spring.log.2025-03-03.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/item-service/spring.log.2025-03-04.0.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/user-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/user-service/spring.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../introduct/技术.md" beforeDir="false" afterPath="$PROJECT_DIR$/../introduct/技术.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/user-service/spring.log.2025-02-27.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/user-service/spring.log.2025-03-01.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/user-service/spring.log.2025-03-02.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/user-service/spring.log.2025-03-03.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/user-service/spring.log.2025-03-04.0.gz" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +51,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -75,6 +76,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.RedisIdWorker.executor&quot;: &quot;Run&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
@@ -127,6 +129,26 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.ItemApplication">
+    <configuration name="RedisIdWorker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cc.item.utils.RedisIdWorker" />
+      <module name="cc-item-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cc.item.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="cc-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cc.gateway.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ItemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cc-item-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cc.item.ItemApplication" />
@@ -157,6 +179,7 @@
       <list>
         <item itemvalue="Spring Boot.ItemApplication" />
         <item itemvalue="Spring Boot.UserApplication" />
+        <item itemvalue="Application.RedisIdWorker" />
       </list>
     </recent_temporary>
   </component>
@@ -210,6 +233,10 @@
       <workItem from="1740977665552" duration="717000" />
       <workItem from="1740979242890" duration="12547000" />
       <workItem from="1741103714727" duration="5507000" />
+      <workItem from="1741423487399" duration="3822000" />
+      <workItem from="1741509211826" duration="2614000" />
+      <workItem from="1742270714909" duration="621000" />
+      <workItem from="1742355782997" duration="10533000" />
     </task>
     <servers />
   </component>

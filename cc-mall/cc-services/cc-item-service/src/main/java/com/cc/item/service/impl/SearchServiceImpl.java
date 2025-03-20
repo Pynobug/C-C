@@ -9,20 +9,18 @@ import com.cc.item.domain.po.ItemDoc;
 import com.cc.item.domain.query.ItemPageQuery;
 import com.cc.item.mapper.SearchMapper;
 import com.cc.item.service.ISearchService;
+import com.cc.item.utils.RedisUtil;
 import lombok.RequiredArgsConstructor;
-import org.apache.http.HttpHost;
 import org.elasticsearch.action.search.SearchRequest;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.RequestOptions;
-import org.elasticsearch.client.RestClient;
 import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.index.query.BoolQueryBuilder;
-import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.builder.SearchSourceBuilder;
 import org.elasticsearch.search.fetch.subphase.highlight.HighlightField;
-import org.elasticsearch.search.sort.SortOrder;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -34,27 +32,24 @@ import java.util.Map;
 @RequiredArgsConstructor
 public class SearchServiceImpl extends ServiceImpl<SearchMapper, Item> implements ISearchService {
 
-    private  RestHighLevelClient client;
+    private final RestHighLevelClient client;
+    private final StringRedisTemplate stringRedisTemplate;
 
     @Override
     public PageDTO<ItemDoc> EsSearch(ItemPageQuery query) throws IOException {
 
         PageDTO<ItemDoc> result = new PageDTO<>();
 
-        //1. 初始化 RestHighLevelClient
-        client = new RestHighLevelClient(RestClient.builder(
-                HttpHost.create("http://192.168.245.128:9200")
-        ));
 
-        //2. 准备Request
+        //1. 准备Request
         SearchRequest request = new SearchRequest("items");
 
-        //3. 构造查询条件
+        //2. 构造查询条件
         BoolQueryBuilder boolQuery = new BoolQueryBuilder();
 
         request.source().trackTotalHits(true);
 
-        //4. 复合查询
+        //3. 复合查询
         if (query.getKey() != null && ! query.getKey().equals("")) {
             boolQuery.must(QueryBuilders.matchQuery("name", query.getKey()));
         }
@@ -88,10 +83,10 @@ public class SearchServiceImpl extends ServiceImpl<SearchMapper, Item> implement
 
         request.source().from(query.from()).size(query.getPageSize());
 
-        //5. 发送请求
+        //4. 发送请求
         SearchResponse response = client.search(request, RequestOptions.DEFAULT);
 
-        //6. 解析结果
+        //5. 解析结果
         result.setTotal(response.getHits().getTotalHits().value);
         result.setPages(result.getTotal() % query.getPageSize() == 0 ?
                 result.getTotal() / query.getPageSize() :
@@ -114,5 +109,17 @@ public class SearchServiceImpl extends ServiceImpl<SearchMapper, Item> implement
         result.setList(list);
 
         return result;
+    }
+
+
+
+    @Override
+    public PageDTO<ItemDoc> RedisSearch(ItemPageQuery query) throws IOException {
+        String redisKey = RedisUtil.buildRedisKey(query);
+        String cacheData = stringRedisTemplate.opsForValue().get(redisKey);
+        if (cacheData != null) {
+            return JSONUtil.toBean(cacheData, PageDTO.class);
+        }
+        return PageDTO.empty(0L, 0L);
     }
 }

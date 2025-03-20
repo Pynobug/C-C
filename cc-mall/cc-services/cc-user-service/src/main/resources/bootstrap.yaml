@@ -7,7 +7,7 @@ spring:
     nacos:
       server-addr: 192.168.245.128:8848
       config:
-        file-extension: yaml
+        file-extension: yml
         shared-configs:
           - data-id: shared-jdbc.yaml
           - data-id: shared-log.yaml

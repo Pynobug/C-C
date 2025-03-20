@@ -11,4 +11,6 @@ import java.io.IOException;
 public interface ISearchService extends IService<Item> {
 
     PageDTO<ItemDoc> EsSearch(ItemPageQuery query) throws IOException;
+
+    PageDTO<ItemDoc> RedisSearch(ItemPageQuery query) throws IOException;
 }
