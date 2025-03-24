@@ -6,9 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="4971975c-888d-4dac-a4b1-bf4bf20cfb33" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/controller/ItemController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/controller/SearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/domain/po/ItemDoc.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/domain/po/ItemDoc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../introduct/API (中文版).md" beforeDir="false" afterPath="$PROJECT_DIR$/../introduct/API (中文版).md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/domain/po/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/domain/po/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/service/IItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/service/IItemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/service/impl/ItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/service/impl/ItemServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/service/impl/SearchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/service/impl/SearchServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/target/classes/com/cc/item/service/impl/SearchServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/target/classes/com/cc/item/service/impl/SearchServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/item-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/item-service/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/user-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/user-service/spring.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,38 +48,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.EsInit.executor": "Run",
-    "Application.RedisIdWorker.executor": "Run",
-    "JUnit.EsTest.EsInit.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.CCMallApplication.executor": "Run",
-    "Spring Boot.ItemApplication.executor": "Run",
-    "Spring Boot.UserApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Administrator/Desktop/CC/C-C/cc-mall/cc-services/cc-item-service/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.47241378",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "configurable.group.appearance",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.EsInit.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RedisIdWorker.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EsTest.EsInit.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.CCMallApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ItemApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.UserApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/Desktop/CC/C-C/cc-mall/cc-services/cc-item-service/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.47241378&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\Desktop\CC\C-C\cc-mall\cc-services\cc-item-service\src\main\resources" />
@@ -85,6 +91,7 @@
       <recent name="C:\Users\Administrator\Desktop\CC\C-C\cc-mall\cc-services\cc-item-service\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.cc.item.enums" />
       <recent name="com.cc.gateway.util" />
       <recent name="com.cc.config" />
     </key>
@@ -98,7 +105,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EsTest.EsInit">
+  <component name="RunManager" selected="Spring Boot.UserApplication">
     <configuration name="EsInit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cc.common.utils.EsInit" />
       <module name="cc-common" />
@@ -176,10 +183,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.EsTest.EsInit" />
-        <item itemvalue="Application.EsInit" />
         <item itemvalue="Spring Boot.UserApplication" />
         <item itemvalue="Spring Boot.ItemApplication" />
+        <item itemvalue="JUnit.EsTest.EsInit" />
+        <item itemvalue="Application.EsInit" />
         <item itemvalue="Application.RedisIdWorker" />
       </list>
     </recent_temporary>
@@ -241,6 +248,7 @@
       <workItem from="1742447968699" duration="6395000" />
       <workItem from="1742520834477" duration="4869000" />
       <workItem from="1742791157722" duration="4993000" />
+      <workItem from="1742797938826" duration="5667000" />
     </task>
     <servers />
   </component>

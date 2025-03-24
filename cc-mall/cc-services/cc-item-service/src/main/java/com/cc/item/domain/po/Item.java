@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.cc.item.enums.ItemStatus;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
@@ -79,7 +80,7 @@ public class Item implements Serializable {
     /**
      * 商品状态 1-正常，2-下架，3-删除
      */
-    private Integer status;
+    private ItemStatus status;
 
     /**
      * 创建时间

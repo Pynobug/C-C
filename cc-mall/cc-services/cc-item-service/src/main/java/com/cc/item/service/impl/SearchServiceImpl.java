@@ -20,6 +20,7 @@ import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.builder.SearchSourceBuilder;
 import org.elasticsearch.search.fetch.subphase.highlight.HighlightField;
+import org.elasticsearch.search.sort.SortOrder;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
@@ -54,13 +55,13 @@ public class SearchServiceImpl extends ServiceImpl<SearchMapper, Item> implement
             boolQuery.must(QueryBuilders.matchQuery("name", query.getKey()));
         }
 
-        /**
+
         if (query.getSortBy() != null && !"".equals(query.getSortBy())) {
             request.source().sort(query.getSortBy(), query.getIsAsc() ? SortOrder.ASC : SortOrder.DESC);
         } else {
             request.source().sort("updateTime", query.getIsAsc() ? SortOrder.ASC : SortOrder.DESC);
         }
-         */
+
 
         if (query.getCategory() != null && ! query.getCategory().equals("")) {
             boolQuery.filter(QueryBuilders.termQuery("category",query.getCategory()));

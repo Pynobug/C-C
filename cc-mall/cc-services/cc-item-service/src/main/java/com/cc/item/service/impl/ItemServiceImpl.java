@@ -9,6 +9,7 @@ import com.cc.common.utils.BeanUtils;
 import com.cc.item.domain.po.Item;
 import com.cc.item.domain.po.ItemDoc;
 import com.cc.item.domain.query.ItemPageQuery;
+import com.cc.item.enums.ItemStatus;
 import com.cc.item.mapper.ItemMapper;
 import com.cc.item.service.IItemService;
 import com.cc.item.service.ISearchService;
@@ -17,6 +18,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.io.IOException;
+import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.List;
 
@@ -55,6 +57,50 @@ public class ItemServiceImpl extends ServiceImpl<ItemMapper, Item> implements II
             result = searchService.EsSearch(query);
         }
         return result;
+    }
+
+    @Override
+    public void addItem(Item item) {
+        item.setStatus(ItemStatus.DOWN); // 默认待审核
+        item.setCreateTime(LocalDateTime.now());
+        item.setUpdateTime(LocalDateTime.now());
+        save(item);
+    }
+
+    @Override
+    public void publish(Long itemId) {
+        Item item = getById(itemId);
+        if (item != null && item.getStatus() == ItemStatus.DOWN) {
+            item.setStatus(ItemStatus.NORMAL);
+            item.setUpdateTime(LocalDateTime.now());
+            updateById(item);
+        }
+        //2. 异步通知es，redis上架
+        //TODO
+    }
+
+    @Override
+    public void down(Long itemId) {
+        Item item = getById(itemId);
+        if (item != null && item.getStatus() == ItemStatus.NORMAL) {
+            item.setStatus(ItemStatus.DOWN);
+            item.setUpdateTime(LocalDateTime.now());
+            updateById(item);
+        }
+        //2. 异步通知es，redis下架
+        //TODO
+    }
+
+    @Override
+    public void delete(Long itemId) {
+        Item item = getById(itemId);
+        if (item != null) {
+            item.setStatus(ItemStatus.DELETE);
+            item.setUpdateTime(LocalDateTime.now());
+            updateById(item);
+        }
+        //2. 异步通知es，redis下架
+        //TODO
     }
 
 
