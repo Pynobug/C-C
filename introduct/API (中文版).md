@@ -4,7 +4,7 @@
 
 #### 1.1 注册
 
-```apl
+```http
 [post] http://localhost:8080/users/register
 ```
 
@@ -72,5 +72,35 @@ BCryptPasswordEncoder是一种常用的加密算法，它生成一个带有盐�
 
 #### 1.2 登录
 
+```http
+[post] http://localhost:8080/users/login
+```
 
+```java
+public UserLoginVO login(@RequestBody @Validated LoginFormDTO loginFormDTO){
+    return userService.login(loginFormDTO);
+}
+```
+
+
+
+
+
+
+
+
+
+### 2. 商品模块
+
+#### 2.1 搜索
+
+```http
+[post] http://localhost:8080/search/list
+```
+
+```java
+public PageDTO<ItemDoc> search(ItemPageQuery query) throws IOException{
+    return itemService.Search(query);
+}
+```
 

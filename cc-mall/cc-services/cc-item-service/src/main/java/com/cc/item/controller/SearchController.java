@@ -31,6 +31,5 @@ public class SearchController {
         return PageDTO.of(result, ItemDTO.class);
          */
         return itemService.Search(query);
-
     }
 }

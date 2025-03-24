@@ -34,7 +34,6 @@ public class ItemDoc{
     @ApiModelProperty("评论数")
     private Integer commentCount;
 
-
     @ApiModelProperty("更新时间")
     private LocalDateTime updateTime;
 }
