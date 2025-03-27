@@ -1,5 +1,6 @@
 package com.cc.item.controller;
 
+import com.cc.api.dto.ItemDTO;
 import com.cc.common.domain.PageDTO;
 import com.cc.item.domain.po.ItemDoc;
 import com.cc.item.domain.query.ItemPageQuery;
@@ -23,7 +24,7 @@ public class SearchController {
 
     @ApiOperation("搜索商品")
     @GetMapping("/list")
-    public PageDTO<ItemDoc> search(ItemPageQuery query) throws IOException{
+    public PageDTO<ItemDTO> search(ItemPageQuery query) throws IOException{
         return itemService.Search(query);
     }
 }

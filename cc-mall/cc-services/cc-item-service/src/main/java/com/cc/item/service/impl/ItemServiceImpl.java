@@ -48,11 +48,11 @@ public class ItemServiceImpl extends ServiceImpl<ItemMapper, Item> implements II
     }
 
     @Override
-    public PageDTO<ItemDoc> Search(ItemPageQuery query) throws IOException {
+    public PageDTO<ItemDTO> Search(ItemPageQuery query) throws IOException {
         if (query == null) {
             return PageDTO.empty(0L, 0L);
         }
-        PageDTO<ItemDoc> result = searchService.RedisSearch(query);
+        PageDTO<ItemDTO> result = searchService.RedisSearch(query);
         if (result == null) {
             result = searchService.EsSearch(query);
         }

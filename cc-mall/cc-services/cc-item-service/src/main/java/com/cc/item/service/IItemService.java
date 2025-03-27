@@ -23,7 +23,7 @@ public interface IItemService extends IService<Item> {
 
     List<ItemDTO> queryItemByIds(Collection<Long> ids);
 
-    PageDTO<ItemDoc> Search(ItemPageQuery query) throws IOException;
+    PageDTO<ItemDTO> Search(ItemPageQuery query) throws IOException;
 
     void addItem(Item item);
 

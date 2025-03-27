@@ -2,6 +2,7 @@ package com.cc.item.service.impl;
 
 import cn.hutool.json.JSONUtil;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.cc.api.dto.ItemDTO;
 import com.cc.common.domain.PageDTO;
 import com.cc.common.utils.CollUtils;
 import com.cc.item.domain.po.Item;
@@ -37,9 +38,9 @@ public class SearchServiceImpl extends ServiceImpl<SearchMapper, Item> implement
     private final StringRedisTemplate stringRedisTemplate;
 
     @Override
-    public PageDTO<ItemDoc> EsSearch(ItemPageQuery query) throws IOException {
+    public PageDTO<ItemDTO> EsSearch(ItemPageQuery query) throws IOException {
 
-        PageDTO<ItemDoc> result = new PageDTO<>();
+        PageDTO<ItemDTO> result = new PageDTO<>();
 
 
         //1. 准备Request
@@ -94,18 +95,18 @@ public class SearchServiceImpl extends ServiceImpl<SearchMapper, Item> implement
                 (result.getTotal() / query.getPageSize()) + 1);
 
         final SearchHit[] hits = response.getHits().getHits();
-        List<ItemDoc> list = new ArrayList<>();
+        List<ItemDTO> list = new ArrayList<>();
 
         for (SearchHit hit : hits) {
-            ItemDoc itemDoc = JSONUtil.toBean(hit.getSourceAsString(), ItemDoc.class);
+            ItemDTO itemDTO = JSONUtil.toBean(hit.getSourceAsString(), ItemDTO.class);
             Map<String, HighlightField> hfs = hit.getHighlightFields();
             if (CollUtils.isNotEmpty(hfs)) {
                 HighlightField hf = hfs.get("name");
                 if (hf != null) {
-                    itemDoc.setName(hf.getFragments()[0].toString());
+                    itemDTO.setName(hf.getFragments()[0].toString());
                 }
             }
-            list.add(itemDoc);
+            list.add(itemDTO);
         }
         result.setList(list);
 
@@ -115,12 +116,7 @@ public class SearchServiceImpl extends ServiceImpl<SearchMapper, Item> implement
 
 
     @Override
-    public PageDTO<ItemDoc> RedisSearch(ItemPageQuery query) throws IOException {
-        String redisKey = RedisUtil.buildRedisKey(query);
-        String cacheData = stringRedisTemplate.opsForValue().get(redisKey);
-        if (cacheData != null) {
-            return JSONUtil.toBean(cacheData, PageDTO.class);
-        }
-        return PageDTO.empty(0L, 0L);
+    public PageDTO<ItemDTO> RedisSearch(ItemPageQuery query) throws IOException {
+        return null;
     }
 }

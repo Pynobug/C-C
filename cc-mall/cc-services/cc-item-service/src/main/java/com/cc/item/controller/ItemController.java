@@ -1,6 +1,11 @@
 package com.cc.item.controller;
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.cc.common.domain.PageDTO;
+import com.cc.common.domain.PageQuery;
+import com.cc.item.domain.dto.ItemDTO;
 import com.cc.item.domain.po.Item;
+import com.cc.item.domain.po.ItemDoc;
 import com.cc.item.service.impl.ItemServiceImpl;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -39,5 +44,14 @@ public class ItemController {
     @PostMapping("/{itemId}/delete")
     public void delete(@PathVariable Long itemId) {
         itemService.delete(itemId);
+    }
+
+    @ApiOperation("分页查询商品信息")
+    @GetMapping("/page")
+    public PageDTO<ItemDTO> queryItemByPage(PageQuery query) {
+        // 1.分页查询
+        Page<Item> result = itemService.page(query.toMpPage("update_time", false));
+        // 2.封装并返回
+        return PageDTO.of(result, ItemDTO.class);
     }
 }
