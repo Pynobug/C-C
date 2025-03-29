@@ -61,10 +61,6 @@ public class Item implements Serializable {
      */
     private String brand;
 
-    /**
-     * 规格
-     */
-    private String spec;
 
     /**
      * 销量

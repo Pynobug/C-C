@@ -1,18 +1,15 @@
 package com.cc.item.controller;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.cc.api.dto.ItemDTO;
 import com.cc.common.domain.PageDTO;
 import com.cc.common.domain.PageQuery;
-import com.cc.item.domain.dto.ItemDTO;
 import com.cc.item.domain.po.Item;
-import com.cc.item.domain.po.ItemDoc;
 import com.cc.item.service.impl.ItemServiceImpl;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-
-import java.time.LocalDateTime;
 
 @Api(tags = "商品相关接口")
 @RestController
@@ -23,8 +20,8 @@ public class ItemController {
 
     @ApiOperation("新增商品")
     @PostMapping("/add")
-    public void addItem(@RequestBody Item item) {
-        itemService.addItem(item);
+    public void addItem(@RequestBody ItemDTO itemDTO) {
+        itemService.addItem(itemDTO);
     }
 
 

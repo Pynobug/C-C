@@ -21,8 +21,6 @@ public class ItemDTO {
     private String category;
     @ApiModelProperty("品牌名称")
     private String brand;
-    @ApiModelProperty("规格")
-    private String spec;
     @ApiModelProperty("销量")
     private Integer sold;
     @ApiModelProperty("评论数")

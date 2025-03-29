@@ -106,3 +106,18 @@ We can use Spring Gateway to implement it
 
 ## 2024/11/21
 
+```json
+{
+  "brand": "山白",
+  "category": "竹、藤及骨艺",
+  "commentCount": 0,
+  "id": 0,
+  "image": "{\"images\": [\"ox_bone_mahjong_001.jpg\", \"ox_bone_mahjong_002.jpg\", \"ox_bone_mahjong_003.jpg\"], \"videos\": [\"https://www.youtube.com/watch?v=z59klo0e3H0\"]}",
+  "name": "竹骨麻将",
+  "price": 1338,
+  "sold": 0,
+  "status": 0,
+  "stock": 300
+}
+```
+

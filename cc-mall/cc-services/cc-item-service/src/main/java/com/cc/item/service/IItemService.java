@@ -25,11 +25,13 @@ public interface IItemService extends IService<Item> {
 
     PageDTO<ItemDTO> Search(ItemPageQuery query) throws IOException;
 
-    void addItem(Item item);
+    void addItem(ItemDTO itemDTO);
 
     void publish(Long itemId);
 
     void down(Long itemId);
 
     void delete(Long itemId);
+
+    void pubToEs(Long itemId) throws IOException;
 }
