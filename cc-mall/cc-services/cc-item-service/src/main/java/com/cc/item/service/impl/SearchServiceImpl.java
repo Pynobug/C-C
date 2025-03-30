@@ -12,9 +12,11 @@ import com.cc.item.mapper.SearchMapper;
 import com.cc.item.service.ISearchService;
 import com.cc.item.utils.RedisUtil;
 import lombok.RequiredArgsConstructor;
+import org.apache.http.HttpHost;
 import org.elasticsearch.action.search.SearchRequest;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.RequestOptions;
+import org.elasticsearch.client.RestClient;
 import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.index.query.BoolQueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
@@ -34,8 +36,11 @@ import java.util.Map;
 @RequiredArgsConstructor
 public class SearchServiceImpl extends ServiceImpl<SearchMapper, Item> implements ISearchService {
 
-    private final RestHighLevelClient client;
     private final StringRedisTemplate stringRedisTemplate;
+
+    RestHighLevelClient client = new RestHighLevelClient(RestClient.builder(
+            new HttpHost("localhost", 9200, "http")
+    ));
 
     @Override
     public PageDTO<ItemDTO> EsSearch(ItemPageQuery query) throws IOException {
