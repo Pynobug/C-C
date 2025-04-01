@@ -37,7 +37,7 @@ public class ItemServiceImpl extends ServiceImpl<ItemMapper, Item> implements II
     private final ISearchService searchService;
 
     RestHighLevelClient client = new RestHighLevelClient(RestClient.builder(
-            new HttpHost("localhost", 9200, "http")
+            HttpHost.create("http://192.168.245.128:9200")
     ));
 
     @Override

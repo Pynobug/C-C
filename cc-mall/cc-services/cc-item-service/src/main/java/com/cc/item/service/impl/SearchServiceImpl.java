@@ -39,9 +39,8 @@ public class SearchServiceImpl extends ServiceImpl<SearchMapper, Item> implement
     private final StringRedisTemplate stringRedisTemplate;
 
     RestHighLevelClient client = new RestHighLevelClient(RestClient.builder(
-            new HttpHost("localhost", 9200, "http")
+            HttpHost.create("http://192.168.245.128:9200")
     ));
-
     @Override
     public PageDTO<ItemDTO> EsSearch(ItemPageQuery query) throws IOException {
 
