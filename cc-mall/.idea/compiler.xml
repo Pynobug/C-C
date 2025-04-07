@@ -10,6 +10,7 @@
         <module name="cc-common" />
         <module name="cc-item-service" />
         <module name="cc-gateway" />
+        <module name="cc-cart-service" />
         <module name="cc-api" />
         <module name="cc-user-service" />
       </profile>
@@ -18,6 +19,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="cc-api" options="-parameters" />
+      <module name="cc-cart-service" options="-parameters" />
       <module name="cc-common" options="-parameters" />
       <module name="cc-gateway" options="-parameters" />
       <module name="cc-item-service" options="-parameters" />

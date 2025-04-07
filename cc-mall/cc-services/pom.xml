@@ -14,6 +14,7 @@
     <modules>
         <module>cc-user-service</module>
         <module>cc-item-service</module>
+        <module>cc-cart-service</module>
     </modules>
 
     <properties>
