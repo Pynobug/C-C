@@ -23,7 +23,7 @@ public class AuthGlobalFilter implements GlobalFilter, Ordered {
 
     private final AuthProperties authProperties;
     private final JwtTool jwtTool;
-    private final AntPathMatcher antPathMatcher;
+    private final AntPathMatcher antPathMatcher = new AntPathMatcher();;
 
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {

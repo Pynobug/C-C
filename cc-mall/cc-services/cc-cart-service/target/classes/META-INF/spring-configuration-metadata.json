@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "cc.cart",
+      "type": "com.cc.cart.config.CartProperties",
+      "sourceType": "com.cc.cart.config.CartProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "cc.cart.max-items",
+      "type": "java.lang.Integer",
+      "sourceType": "com.cc.cart.config.CartProperties"
+    }
+  ],
+  "hints": []
+}
