@@ -5,27 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4971975c-888d-4dac-a4b1-bf4bf20cfb33" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-api/src/main/java/com/cc/api/client/UserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-api/src/main/java/com/cc/api/client/UserClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-api/target/classes/com/cc/api/client/UserClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/cc-api/target/classes/com/cc/api/client/UserClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-gateway/src/main/java/com/cc/gateway/filters/AuthGlobalFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-gateway/src/main/java/com/cc/gateway/filters/AuthGlobalFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cc-gateway/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-gateway/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cc-gateway/src/main/resources/bootstrap.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-gateway/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-gateway/target/classes/bootstrap.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-gateway/target/classes/com/cc/gateway/filters/AuthGlobalFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/cc-gateway/target/classes/com/cc/gateway/filters/AuthGlobalFilter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cc-services/cc-cart-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-cart-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-cart-service/src/main/resources/application-locl.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-cart-service/src/main/resources/application-local.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-cart-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-cart-service/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/java/com/cc/user/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/java/com/cc/user/UserApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/resources/bootstrap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/resources/bootstrap.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/target/classes/bootstrap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-user-service/target/classes/bootstrap.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/target/classes/com/cc/user/UserApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-user-service/target/classes/com/cc/user/UserApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/item-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/item-service/spring.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/item-service/spring.log.2025-03-28.0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/item-service/spring.log.2025-03-30.0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/user-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/user-service/spring.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/user-service/spring.log.2025-03-24.0.gz" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,6 +267,7 @@
       <workItem from="1744964235979" duration="2220000" />
       <workItem from="1745126828704" duration="1323000" />
       <workItem from="1745129128255" duration="134000" />
+      <workItem from="1745130885242" duration="33000" />
     </task>
     <servers />
   </component>
