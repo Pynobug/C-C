@@ -75,11 +75,11 @@
             <artifactId>spring-boot-configuration-processor</artifactId>
             <optional>true</optional>
         </dependency>
-        <!--sentinel
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
-        </dependency> -->
+        <!--sentinel-->
+        <!--<dependency>-->
+            <!--<groupId>com.alibaba.cloud</groupId>-->
+            <!--<artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>-->
+        <!--</dependency> -->
         <!--统一配置管理-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
@@ -90,11 +90,11 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-bootstrap</artifactId>
         </dependency>
-        <!--seata
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-seata</artifactId>
-        </dependency> -->
+        <!--seata-->
+        <!--<dependency>-->
+        <!--<groupId>com.alibaba.cloud</groupId>-->
+        <!--<artifactId>spring-cloud-starter-alibaba-seata</artifactId>-->
+        <!--</dependency> -->
         <!--消息发送-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

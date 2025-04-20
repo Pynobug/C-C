@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4971975c-888d-4dac-a4b1-bf4bf20cfb33" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cc-services/cc-cart-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-cart-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/cart-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/cart-service/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/gateway/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/gateway/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/item-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/item-service/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/user-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/user-service/spring.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,8 +188,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ItemApplication" />
         <item itemvalue="Spring Boot.UserApplication" />
+        <item itemvalue="Spring Boot.ItemApplication" />
         <item itemvalue="JUnit.EsTest.EsInit" />
         <item itemvalue="Application.EsInit" />
         <item itemvalue="Application.RedisIdWorker" />
@@ -268,6 +273,7 @@
       <workItem from="1745126828704" duration="1323000" />
       <workItem from="1745129128255" duration="134000" />
       <workItem from="1745130885242" duration="33000" />
+      <workItem from="1745136911951" duration="62000" />
     </task>
     <servers />
   </component>
