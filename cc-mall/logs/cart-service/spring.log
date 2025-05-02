@@ -1,125 +1,13 @@
-10:10:40:729 ERROR 24076 --- [nacos-grpc-client-executor-10842] c.a.n.c.remote.client.grpc.GrpcClient    : [1746039746455_192.168.245.1_57262]Request stream error, switch server,error={}
-
-com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
-	at com.alibaba.nacos.shaded.io.grpc.Status.asRuntimeException(Status.java:533) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:442) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.internal.CensusStatsModule$StatsClientInterceptor$1$1.onClose(CensusStatsModule.java:700) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.internal.CensusTracingModule$TracingClientInterceptor$1$1.onClose(CensusTracingModule.java:399) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:510) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:66) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:630) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:518) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:692) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:681) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123) ~[nacos-client-2.0.4.jar:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
-Caused by: java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394) ~[na:na]
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426) ~[na:na]
-	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1140) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:697) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:632) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:549) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:511) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[nacos-client-2.0.4.jar:na]
-	... 1 common frames omitted
-
-10:10:40:729 ERROR 24076 --- [nacos-grpc-client-executor-10844] c.a.n.c.remote.client.grpc.GrpcClient    : [1746039744134_192.168.245.1_57239]Request stream error, switch server,error={}
-
-com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
-	at com.alibaba.nacos.shaded.io.grpc.Status.asRuntimeException(Status.java:533) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:442) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.internal.CensusStatsModule$StatsClientInterceptor$1$1.onClose(CensusStatsModule.java:700) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.internal.CensusTracingModule$TracingClientInterceptor$1$1.onClose(CensusTracingModule.java:399) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:510) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:66) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:630) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:518) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:692) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:681) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123) ~[nacos-client-2.0.4.jar:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
-Caused by: java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394) ~[na:na]
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426) ~[na:na]
-	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1140) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:697) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:632) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:549) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:511) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[nacos-client-2.0.4.jar:na]
-	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[nacos-client-2.0.4.jar:na]
-	... 1 common frames omitted
-
-10:10:41:314  INFO 24076 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [8d304171-d8f6-4a7f-b54a-e8524a8dcf57] Try to reconnect to a new server, server is  not appointed, will choose a random server.
-10:10:42:232  INFO 24076 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [f2a0d118-e687-4cad-8e8f-e051aa143c18_config-0] Server healthy check fail, currentConnection = 1746039744134_192.168.245.1_57239
-10:10:42:233  INFO 24076 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [f2a0d118-e687-4cad-8e8f-e051aa143c18_config-0] Try to reconnect to a new server, server is  not appointed, will choose a random server.
-10:10:42:330  INFO 24076 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [8d304171-d8f6-4a7f-b54a-e8524a8dcf57] Success to connect a server [192.168.245.128:8848], connectionId = 1746055816827_192.168.245.1_59789
-10:10:42:331  INFO 24076 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [8d304171-d8f6-4a7f-b54a-e8524a8dcf57] Abandon prev connection, server is 192.168.245.128:8848, connectionId is 1746039746455_192.168.245.1_57262
-10:10:42:332  INFO 24076 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : Close current connection 1746039746455_192.168.245.1_57262
-10:10:42:333  INFO 24076 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [8d304171-d8f6-4a7f-b54a-e8524a8dcf57] Notify disconnected event to listeners
-10:10:42:335  INFO 24076 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [8d304171-d8f6-4a7f-b54a-e8524a8dcf57] Notify connected event to listeners.
-10:10:42:406  INFO 24076 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [f2a0d118-e687-4cad-8e8f-e051aa143c18_config-0] Success to connect a server [192.168.245.128:8848], connectionId = 1746055816917_192.168.245.1_63802
-10:10:42:406  INFO 24076 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [f2a0d118-e687-4cad-8e8f-e051aa143c18_config-0] Abandon prev connection, server is 192.168.245.128:8848, connectionId is 1746039744134_192.168.245.1_57239
-10:10:42:406  INFO 24076 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : Close current connection 1746039744134_192.168.245.1_57239
-10:10:42:408  INFO 24076 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [f2a0d118-e687-4cad-8e8f-e051aa143c18_config-0] Notify disconnected event to listeners
-10:10:42:407  INFO 24076 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [f2a0d118-e687-4cad-8e8f-e051aa143c18_config-0] Try to reconnect to a new server, server is  not appointed, will choose a random server.
-10:10:42:412  INFO 24076 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [f2a0d118-e687-4cad-8e8f-e051aa143c18_config-0] Notify connected event to listeners.
-10:10:42:561  INFO 24076 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [f2a0d118-e687-4cad-8e8f-e051aa143c18_config-0] Success to connect a server [192.168.245.128:8848], connectionId = 1746055817108_192.168.245.1_57812
-10:10:42:563  INFO 24076 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [f2a0d118-e687-4cad-8e8f-e051aa143c18_config-0] Abandon prev connection, server is 192.168.245.128:8848, connectionId is 1746055816917_192.168.245.1_63802
-10:10:42:563  INFO 24076 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : Close current connection 1746055816917_192.168.245.1_63802
-10:10:42:569  INFO 24076 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [f2a0d118-e687-4cad-8e8f-e051aa143c18_config-0] Notify disconnected event to listeners
-10:10:42:570  INFO 24076 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [f2a0d118-e687-4cad-8e8f-e051aa143c18_config-0] Notify connected event to listeners.
-10:10:42:583  WARN 24076 --- [nacos-grpc-client-executor-10854] c.a.n.c.remote.client.grpc.GrpcClient    : [1746055816917_192.168.245.1_63802]Ignore error event,isRunning:true,isAbandon=true
-10:10:45:461  INFO 24076 --- [nacos-grpc-client-executor-10848] com.alibaba.nacos.common.remote.client   : [8d304171-d8f6-4a7f-b54a-e8524a8dcf57] Receive server push request, request = NotifySubscriberRequest, requestId = 93
-10:10:45:461  INFO 24076 --- [nacos-grpc-client-executor-10848] com.alibaba.nacos.common.remote.client   : [8d304171-d8f6-4a7f-b54a-e8524a8dcf57] Ack server push request, request = NotifySubscriberRequest, requestId = 93
-10:10:46:013  INFO 24076 --- [nacos-grpc-client-executor-10849] com.alibaba.nacos.common.remote.client   : [8d304171-d8f6-4a7f-b54a-e8524a8dcf57] Receive server push request, request = NotifySubscriberRequest, requestId = 96
-10:10:46:013  INFO 24076 --- [nacos-grpc-client-executor-10849] com.alibaba.nacos.common.remote.client   : [8d304171-d8f6-4a7f-b54a-e8524a8dcf57] Ack server push request, request = NotifySubscriberRequest, requestId = 96
-12:28:50:778  INFO 24076 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-12:28:50:779  INFO 24076 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-12:28:50:807  INFO 24076 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 28 ms
-12:28:59:889  INFO 24076 --- [http-nio-8083-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-12:29:00:154  INFO 24076 --- [http-nio-8083-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-12:29:00:161 DEBUG 24076 --- [http-nio-8083-exec-6] c.cc.cart.mapper.CartMapper.selectList   : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
-12:29:00:192 DEBUG 24076 --- [http-nio-8083-exec-6] c.cc.cart.mapper.CartMapper.selectList   : ==> Parameters: null
-12:29:00:236 DEBUG 24076 --- [http-nio-8083-exec-6] c.cc.cart.mapper.CartMapper.selectList   : <==      Total: 0
-12:30:08:818  WARN 24076 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
-12:30:08:818  WARN 24076 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
-12:30:08:819  WARN 24076 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
-12:30:08:820  WARN 24076 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
-12:30:08:904  INFO 24076 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
-12:30:08:906  INFO 24076 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
-12:30:09:232  INFO 24076 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
-12:30:09:232  INFO 24076 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@4850ce45[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
-12:30:09:232  INFO 24076 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1746055816827_192.168.245.1_59789
-12:30:09:233  INFO 24076 --- [nacos-grpc-client-executor-12527] c.a.n.c.remote.client.grpc.GrpcClient    : [1746055816827_192.168.245.1_59789]Ignore complete event,isRunning:false,isAbandon=false
-12:30:09:235  INFO 24076 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@36b684bf[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 12528]
-12:30:09:241  INFO 24076 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-12:30:09:246  INFO 24076 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+01:30:14:352  WARN 6936 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+01:30:14:352  WARN 6936 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+01:30:14:380  WARN 6936 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+01:30:14:390  WARN 6936 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+01:30:14:590  INFO 6936 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+01:30:14:592  INFO 6936 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+01:30:14:913  INFO 6936 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+01:30:14:913  INFO 6936 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@2c440019[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+01:30:14:914  INFO 6936 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1746183744670_192.168.245.1_62156
+01:30:14:916  INFO 6936 --- [nacos-grpc-client-executor-4670] c.a.n.c.remote.client.grpc.GrpcClient    : [1746183744670_192.168.245.1_62156]Ignore complete event,isRunning:false,isAbandon=false
+01:30:14:926  INFO 6936 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@47085c22[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 4671]
+01:30:14:932  INFO 6936 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+01:30:14:939  INFO 6936 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

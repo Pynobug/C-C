@@ -4,12 +4,15 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.cc.api.dto.ItemDTO;
 import com.cc.common.domain.PageDTO;
 import com.cc.common.domain.PageQuery;
+import com.cc.common.utils.BeanUtils;
 import com.cc.item.domain.po.Item;
 import com.cc.item.service.impl.ItemServiceImpl;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @Api(tags = "商品相关接口")
 @RestController
@@ -51,4 +54,19 @@ public class ItemController {
         // 2.封装并返回
         return PageDTO.of(result, ItemDTO.class);
     }
+
+    @ApiOperation("根据id查询商品")
+    @GetMapping("{id}")
+    public ItemDTO queryItemById(@PathVariable("id") Long id) {
+        return BeanUtils.copyBean(itemService.getById(id), ItemDTO.class);
+    }
+
+    @ApiOperation("根据id批量查询商品")
+    @GetMapping
+    public List<ItemDTO> queryItemByIds(@RequestParam("ids") List<Long> ids){
+        // 模拟业务延迟
+        // ThreadUtil.sleep(500);
+        return itemService.queryItemByIds(ids);
+    }
+
 }

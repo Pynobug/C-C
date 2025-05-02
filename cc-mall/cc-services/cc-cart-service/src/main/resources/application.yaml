@@ -11,6 +11,8 @@ cc:
     package: com.cc.cart.controller
   db:
     database: cc-cart
+  cart:
+    max-items: 100
 #spring:
   #cloud:
     #sentinel:

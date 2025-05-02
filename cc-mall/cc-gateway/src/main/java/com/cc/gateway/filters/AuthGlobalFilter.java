@@ -37,7 +37,12 @@ public class AuthGlobalFilter implements GlobalFilter, Ordered {
         String token = null;
         List<String> headers = request.getHeaders().get("authorization");
         if (headers != null && !headers.isEmpty()) {
-            token = headers.get(0);
+            String authHeader = headers.get(0);
+            if (authHeader.startsWith("Bearer ")) {
+                token = authHeader.substring(7);
+            } else {
+                token = authHeader;
+            }
         }
         //4. Verify token
         Long userId = null;
@@ -45,6 +50,7 @@ public class AuthGlobalFilter implements GlobalFilter, Ordered {
             userId = jwtTool.parseToken(token);
         } catch (UnauthorizedException e)
         {
+            System.out.println(e.getMessage());
             ServerHttpResponse response = exchange.getResponse();
             response.setStatusCode(HttpStatus.UNAUTHORIZED);
             return response.setComplete();

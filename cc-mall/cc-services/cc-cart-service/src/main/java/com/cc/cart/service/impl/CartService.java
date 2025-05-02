@@ -63,13 +63,10 @@ public class CartService extends ServiceImpl<CartMapper, Cart> implements ICartS
         if (CollUtils.isEmpty(carts)) {
             return CollUtils.emptyList();
         }
-
         // 2.转换VO
         List<CartVO> vos = BeanUtils.copyList(carts, CartVO.class);
-
         // 3.处理VO中的商品信息
         handleCartItems(vos);
-
         // 4.返回
         return vos;
     }
