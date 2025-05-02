@@ -10,6 +10,7 @@ cc:
     excludePaths:
       - /search/**
       - /users/login
+      - /users/register
       - /items/**
 
 spring:

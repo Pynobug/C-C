@@ -34,4 +34,6 @@ public interface IItemService extends IService<Item> {
     void delete(Long itemId);
 
     void pubToEs(Long itemId) throws IOException;
+
+    void downToEs(Long itemId) throws IOException;
 }

@@ -80,6 +80,8 @@ public class SearchServiceImpl extends ServiceImpl<SearchMapper, Item> implement
             boolQuery.filter(QueryBuilders.rangeQuery("price").gte(query.getMinPrice()).lte(query.getMaxPrice()));
         }
 
+        request.source().query(boolQuery);
+
         request.source().highlighter(
                 SearchSourceBuilder.highlight()
                         .field("name")
@@ -113,7 +115,6 @@ public class SearchServiceImpl extends ServiceImpl<SearchMapper, Item> implement
             list.add(itemDTO);
         }
         result.setList(list);
-
         return result;
     }
 

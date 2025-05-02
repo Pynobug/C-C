@@ -6,11 +6,25 @@
   <component name="ChangeListManager">
     <list default="true" id="4971975c-888d-4dac-a4b1-bf4bf20cfb33" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-cart-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-cart-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cc-gateway/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/service/IItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/service/IItemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/service/impl/ItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/service/impl/ItemServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/service/impl/SearchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/service/impl/SearchServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/target/classes/com/cc/item/service/impl/ItemServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/target/classes/com/cc/item/service/impl/ItemServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/target/classes/com/cc/item/service/impl/SearchServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/target/classes/com/cc/item/service/impl/SearchServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/cart-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/cart-service/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/cart-service/spring.log.2025-04-18.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/cart-service/spring.log.2025-04-19.0.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/gateway/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/gateway/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/gateway/spring.log.2025-04-17.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/gateway/spring.log.2025-04-18.0.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/item-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/item-service/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/item-service/spring.log.2025-04-17.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/item-service/spring.log.2025-04-18.0.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/user-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/user-service/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/user-service/spring.log.2025-04-17.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/user-service/spring.log.2025-04-18.0.gz" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,8 +202,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.UserApplication" />
         <item itemvalue="Spring Boot.ItemApplication" />
+        <item itemvalue="Spring Boot.UserApplication" />
         <item itemvalue="JUnit.EsTest.EsInit" />
         <item itemvalue="Application.EsInit" />
         <item itemvalue="Application.RedisIdWorker" />
@@ -274,6 +288,10 @@
       <workItem from="1745129128255" duration="134000" />
       <workItem from="1745130885242" duration="33000" />
       <workItem from="1745136911951" duration="62000" />
+      <workItem from="1745137152893" duration="732000" />
+      <workItem from="1745212669348" duration="12821000" />
+      <workItem from="1745636653626" duration="5774000" />
+      <workItem from="1745849436218" duration="16214000" />
     </task>
     <servers />
   </component>
