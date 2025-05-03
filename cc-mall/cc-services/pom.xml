@@ -15,6 +15,8 @@
         <module>cc-user-service</module>
         <module>cc-item-service</module>
         <module>cc-cart-service</module>
+        <module>cc-trade-service</module>
+        <module>cc-pay-service</module>
     </modules>
 
     <properties>

@@ -2,6 +2,7 @@ package com.cc.item.controller;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.cc.api.dto.ItemDTO;
+import com.cc.api.dto.OrderDetailDTO;
 import com.cc.common.domain.PageDTO;
 import com.cc.common.domain.PageQuery;
 import com.cc.common.utils.BeanUtils;
@@ -67,6 +68,12 @@ public class ItemController {
         // 模拟业务延迟
         // ThreadUtil.sleep(500);
         return itemService.queryItemByIds(ids);
+    }
+
+    @ApiOperation("批量扣减库存")
+    @PutMapping("/stock/deduct")
+    public void deductStock(@RequestBody List<OrderDetailDTO> items){
+        itemService.deductStock(items);
     }
 
 }

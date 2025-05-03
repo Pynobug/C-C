@@ -5,34 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4971975c-888d-4dac-a4b1-bf4bf20cfb33" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/cc-services/cc-pay-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cc-services/cc-trade-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-gateway/src/main/java/com/cc/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-gateway/src/main/java/com/cc/gateway/GatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-gateway/src/main/java/com/cc/gateway/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-gateway/src/main/java/com/cc/gateway/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-gateway/src/main/java/com/cc/gateway/filters/AuthGlobalFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-gateway/src/main/java/com/cc/gateway/filters/AuthGlobalFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-gateway/src/main/java/com/cc/gateway/filters/MyGlobalFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-gateway/src/main/java/com/cc/gateway/util/JwtTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-gateway/src/main/java/com/cc/gateway/util/JwtTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cc-gateway/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-gateway/src/main/resources/ccmall.jks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-gateway/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cc-gateway/target/classes/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-gateway/target/classes/ccmall.jks" beforeDir="false" afterPath="$PROJECT_DIR$/cc-gateway/target/classes/ccmall.jks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-gateway/target/classes/com/cc/gateway/GatewayApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/cc-gateway/target/classes/com/cc/gateway/GatewayApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-gateway/target/classes/com/cc/gateway/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/cc-gateway/target/classes/com/cc/gateway/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-gateway/target/classes/com/cc/gateway/filters/AuthGlobalFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/cc-gateway/target/classes/com/cc/gateway/filters/AuthGlobalFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-gateway/target/classes/com/cc/gateway/filters/MyGlobalFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/cc-gateway/target/classes/com/cc/gateway/filters/MyGlobalFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-gateway/target/classes/com/cc/gateway/util/JwtTool.class" beforeDir="false" afterPath="$PROJECT_DIR$/cc-gateway/target/classes/com/cc/gateway/util/JwtTool.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-cart-service/src/main/java/com/cc/cart/service/impl/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-cart-service/src/main/java/com/cc/cart/service/impl/CartService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-cart-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-cart-service/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-cart-service/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-cart-service/target/classes/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-cart-service/target/classes/com/cc/cart/service/impl/CartService.class" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-cart-service/target/classes/com/cc/cart/service/impl/CartService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-api/src/main/java/com/cc/api/client/UserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-api/src/main/java/com/cc/api/client/UserClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-api/src/main/java/com/cc/api/client/fallback/ItemClientFallbackFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-api/src/main/java/com/cc/api/client/fallback/ItemClientFallbackFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-api/src/main/java/com/cc/api/client/fallback/PayClientFallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-api/target/classes/com/cc/api/client/fallback/ItemClientFallbackFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/cc-api/target/classes/com/cc/api/client/fallback/ItemClientFallbackFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-api/target/classes/com/cc/api/client/fallback/PayClientFallback.class" beforeDir="false" afterPath="$PROJECT_DIR$/cc-api/target/classes/com/cc/api/client/fallback/PayClientFallback.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/controller/ItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/mapper/ItemMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/mapper/ItemMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/service/impl/ItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/service/impl/ItemServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/target/classes/com/cc/item/controller/ItemController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/target/classes/com/cc/item/controller/ItemController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/resources/ccmall.jks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/target/classes/ccmall.jks" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-user-service/target/classes/ccmall.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/target/classes/com/cc/item/mapper/ItemMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/target/classes/com/cc/item/mapper/ItemMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/target/classes/com/cc/item/service/impl/ItemServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/target/classes/com/cc/item/service/impl/ItemServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/java/com/cc/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/java/com/cc/user/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/java/com/cc/user/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/java/com/cc/user/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/java/com/cc/user/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-user-service/src/main/java/com/cc/user/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-user-service/target/classes/com/cc/user/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-user-service/target/classes/com/cc/user/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/cart-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/cart-service/spring.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/gateway/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/gateway/spring.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/item-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/item-service/spring.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/user-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/user-service/spring.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +40,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -82,17 +79,19 @@
     "Spring Boot.CartApplication.executor": "Run",
     "Spring Boot.GatewayApplication.executor": "Run",
     "Spring Boot.ItemApplication.executor": "Run",
+    "Spring Boot.PayApplication.executor": "Run",
+    "Spring Boot.TradeApplication.executor": "Run",
     "Spring Boot.UserApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Administrator/Desktop/CC/C-C/cc-mall/cc-services/cc-user-service/src/main/resources",
+    "last_opened_file_path": "C:/Users/Administrator/Desktop/CC/C-C/cc-mall/cc-services/cc-pay-service/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Global Libraries",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.47241378",
     "run.configurations.included.in.services": "true",
@@ -105,6 +104,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\CC\C-C\cc-mall\cc-services\cc-pay-service\src\main\resources" />
       <recent name="C:\Users\Administrator\Desktop\CC\C-C\cc-mall\cc-services\cc-user-service\src\main\resources" />
       <recent name="C:\Users\Administrator\Desktop\CC\C-C\cc-mall\cc-services\cc-item-service\src\main\resources" />
       <recent name="C:\Users\Administrator\Desktop\CC\C-C\cc-mall\cc-gateway\src\main\java\com\cc\gateway\config" />
@@ -129,33 +129,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserApplication">
-    <configuration name="EsInit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cc.common.utils.EsInit" />
-      <module name="cc-common" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cc.common.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RedisIdWorker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cc.item.utils.RedisIdWorker" />
-      <module name="cc-item-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cc.item.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.PayApplication">
     <configuration name="EsTest.EsInit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cc-item-service" />
       <extension name="coverage">
@@ -199,6 +173,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cc-pay-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cc.pay.PayApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cc.pay.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TradeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cc-trade-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cc.trade.TradeApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cc.trade.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cc-user-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cc.user.UserApplication" />
@@ -214,11 +214,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.PayApplication" />
         <item itemvalue="Spring Boot.UserApplication" />
+        <item itemvalue="Spring Boot.TradeApplication" />
         <item itemvalue="Spring Boot.ItemApplication" />
         <item itemvalue="JUnit.EsTest.EsInit" />
-        <item itemvalue="Application.EsInit" />
-        <item itemvalue="Application.RedisIdWorker" />
       </list>
     </recent_temporary>
   </component>
@@ -306,6 +306,8 @@
       <workItem from="1745849436218" duration="16214000" />
       <workItem from="1746160407500" duration="16613000" />
       <workItem from="1746183616839" duration="6969000" />
+      <workItem from="1746243023901" duration="6206000" />
+      <workItem from="1746249440282" duration="4167000" />
     </task>
     <servers />
   </component>

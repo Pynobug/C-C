@@ -1,0 +1,18 @@
+server:
+  port: 8085
+cc:
+  db:
+    database: cc-trade
+  swagger:
+    title: "黑马商城交易服务接口文档"
+    package: com.cc.trade.controller
+spring:
+  boot:
+    run:
+      jvmArguments: "--add-opens java.base/java.lang=ALL-UNNAMED"
+  rabbitmq:
+    host: 192.168.245.128
+    port: 5672
+    virtual-host: /ccmall
+    username: ccmall
+    password: 123

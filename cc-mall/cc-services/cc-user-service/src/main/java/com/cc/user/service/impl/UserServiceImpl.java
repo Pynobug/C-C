@@ -2,7 +2,9 @@ package com.cc.user.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.cc.common.exception.BadRequestException;
+import com.cc.common.exception.BizIllegalException;
 import com.cc.common.exception.ForbiddenException;
+import com.cc.common.utils.UserContext;
 import com.cc.user.config.JwtProperties;
 import com.cc.user.domain.dto.LoginFormDTO;
 import com.cc.user.domain.dto.RegisterFormDTO;
@@ -90,5 +92,25 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         vo.setBalance(user.getBalance());
         vo.setToken(token);
         return vo;
+    }
+
+
+    @Override
+    public void deductMoney(String pw, Integer totalFee) {
+        log.info("开始扣款");
+        // 1.校验密码
+        User user = getById(UserContext.getUser());
+        if(user == null || !passwordEncoder.matches(pw, user.getPassword())){
+            // 密码错误
+            throw new BizIllegalException("用户密码错误");
+        }
+
+        // 2.尝试扣款
+        try {
+            baseMapper.updateMoney(UserContext.getUser(), totalFee);
+        } catch (Exception e) {
+            throw new RuntimeException("扣款失败，可能是余额不足！", e);
+        }
+        log.info("扣款成功");
     }
 }

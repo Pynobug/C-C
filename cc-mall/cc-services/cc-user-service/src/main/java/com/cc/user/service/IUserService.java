@@ -11,4 +11,6 @@ public interface IUserService extends IService<User> {
     Boolean register(RegisterFormDTO registerFormDTO);
 
     UserLoginVO login(LoginFormDTO loginFormDTO);
+
+    void deductMoney(String pw, Integer totalFee);
 }

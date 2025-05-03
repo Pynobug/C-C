@@ -1,0 +1,9 @@
+server:
+  port: 8086
+cc:
+  db:
+    database: cc-pay
+  swagger:
+    title: "支付服务接口文档"
+    desc: "支付服务接口文档"
+    package: com.cc.pay.controller
