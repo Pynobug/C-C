@@ -24,7 +24,7 @@ public class SearchController {
 
     @ApiOperation("搜索商品")
     @GetMapping("/list")
-    public PageDTO<ItemDTO> search(ItemPageQuery query) throws IOException{
-        return itemService.Search(query);
+    public PageDTO<ItemDTO> search(ItemPageQuery query) {
+        return new PageDTO<>();
     }
 }

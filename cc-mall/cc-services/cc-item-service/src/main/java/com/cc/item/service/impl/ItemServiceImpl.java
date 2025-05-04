@@ -67,15 +67,36 @@ public class ItemServiceImpl extends ServiceImpl<ItemMapper, Item> implements II
 
     @Override
     public PageDTO<ItemDTO> Search(ItemPageQuery query) throws IOException {
+        PageDTO<ItemDTO> result = null;
         if (query == null) {
             return PageDTO.empty(0L, 0L);
         }
-        PageDTO<ItemDTO> result = searchService.RedisSearch(query);
+
+        if (query.getMinPrice() == null && query.getMaxPrice() == null) {
+            int nonNullCount = 0;
+            if (query.getKey() != null && !query.getKey().isEmpty()) {
+                nonNullCount++;
+            }
+            if (query.getCategory() != null && !query.getCategory().isEmpty()) {
+                nonNullCount++;
+            }
+            if (query.getBrand() != null && !query.getBrand().isEmpty()) {
+                nonNullCount++;
+            }
+            if (nonNullCount == 1) {
+                result = searchService.RedisSearchId(query);
+                if (result == null) {
+                    result = searchService.EsSearch(query);
+                }
+            }
+        }
+
         if (result == null) {
             result = searchService.EsSearch(query);
         }
         return result;
     }
+
 
     @Override
     public void addItem(ItemDTO itemDTO) {
