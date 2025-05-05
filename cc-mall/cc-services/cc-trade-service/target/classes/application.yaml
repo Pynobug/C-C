@@ -4,7 +4,7 @@ cc:
   db:
     database: cc-trade
   swagger:
-    title: "黑马商城交易服务接口文档"
+    title: "ccmall交易服务接口文档"
     package: com.cc.trade.controller
 spring:
   boot:
@@ -13,6 +13,6 @@ spring:
   rabbitmq:
     host: 192.168.245.128
     port: 5672
-    virtual-host: /ccmall
-    username: ccmall
-    password: 123
+    virtual-host: /
+    username: root
+    password: root

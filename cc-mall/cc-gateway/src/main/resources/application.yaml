@@ -12,6 +12,7 @@ cc:
       - /users/login
       - /users/register
       - /items/**
+      - /orders/test
 
 spring:
   application:

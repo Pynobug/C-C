@@ -9,6 +9,7 @@ import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.web.bind.annotation.*;
 
 @Api(tags = "订单管理接口")
@@ -17,6 +18,7 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 public class OrderController {
     private final IOrderService orderService;
+    private final RabbitTemplate rabbitTemplate;
 
     @ApiOperation("根据id查询订单")
     @GetMapping("{id}")
@@ -35,5 +37,14 @@ public class OrderController {
     @PutMapping("/{orderId}")
     public void markOrderPaySuccess(@PathVariable("orderId") Long orderId) {
         orderService.markOrderPaySuccess(orderId);
+    }
+
+    @GetMapping("/test")
+    public void test() {
+        String exchangeName = "trade.direct";
+        String routingKey = "order.query";
+        String message = "Hello World";
+        //100 个线程
+        rabbitTemplate.convertAndSend(exchangeName, routingKey, message);
     }
 }

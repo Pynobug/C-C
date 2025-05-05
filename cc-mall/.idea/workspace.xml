@@ -6,14 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="4971975c-888d-4dac-a4b1-bf4bf20cfb33" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/controller/SearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/service/ISearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/service/ISearchService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/service/impl/ItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/service/impl/ItemServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/service/impl/SearchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/service/impl/SearchServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/utils/RedisUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cc-gateway/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-gateway/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cc-gateway/target/classes/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/target/classes/com/cc/item/controller/SearchController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/target/classes/com/cc/item/controller/SearchController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/target/classes/com/cc/item/service/impl/ItemServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/target/classes/com/cc/item/service/impl/ItemServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc-services/cc-item-service/target/classes/com/cc/item/service/impl/SearchServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-item-service/target/classes/com/cc/item/service/impl/SearchServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-trade-service/src/main/java/com/cc/trade/constants/MQConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-trade-service/src/main/java/com/cc/trade/constants/MQConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-trade-service/src/main/java/com/cc/trade/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-trade-service/src/main/java/com/cc/trade/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-trade-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-trade-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-trade-service/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-trade-service/target/classes/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc-services/cc-trade-service/target/classes/com/cc/trade/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cc-services/cc-trade-service/target/classes/com/cc/trade/controller/OrderController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/cart-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/cart-service/spring.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/gateway/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/gateway/spring.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/item-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/item-service/spring.log" afterDir="false" />
@@ -53,42 +53,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.EsInit.executor": "Run",
-    "Application.RedisIdWorker.executor": "Run",
-    "JUnit.EsTest.EsInit.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.CCMallApplication.executor": "Run",
-    "Spring Boot.CartApplication.executor": "Run",
-    "Spring Boot.GatewayApplication.executor": "Run",
-    "Spring Boot.ItemApplication.executor": "Run",
-    "Spring Boot.PayApplication.executor": "Run",
-    "Spring Boot.TradeApplication.executor": "Run",
-    "Spring Boot.UserApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Administrator/Desktop/CC/C-C/cc-mall/cc-services/cc-pay-service/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.47241378",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "configurable.group.appearance",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.EsInit.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RedisIdWorker.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EsTest.EsInit.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MqTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MqTest.test.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.CCMallApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CartApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ItemApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.PayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.TradeApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.UserApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/Desktop/CC/C-C/cc-mall/cc-services/cc-pay-service/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.47241378&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -119,18 +121,33 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.PayApplication">
-    <configuration name="EsTest.EsInit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cc-item-service" />
+  <component name="RunManager" selected="JUnit.MqTest.test">
+    <configuration name="MqTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cc-trade-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cc.item.es.*" />
+          <option name="PATTERN" value="com.cc.trade.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.cc.item.es" />
-      <option name="MAIN_CLASS_NAME" value="com.cc.item.es.EsTest" />
-      <option name="METHOD_NAME" value="EsInit" />
+      <option name="PACKAGE_NAME" value="com.cc.trade" />
+      <option name="MAIN_CLASS_NAME" value="com.cc.trade.MqTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MqTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cc-trade-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cc.trade.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cc.trade" />
+      <option name="MAIN_CLASS_NAME" value="com.cc.trade.MqTest" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -146,19 +163,6 @@
     <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="cc-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cc.gateway.GatewayApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ItemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="cc-item-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cc.item.ItemApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cc.item.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -204,11 +208,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ItemApplication" />
-        <item itemvalue="Spring Boot.UserApplication" />
         <item itemvalue="Spring Boot.TradeApplication" />
+        <item itemvalue="JUnit.MqTest.test" />
+        <item itemvalue="JUnit.MqTest" />
+        <item itemvalue="Spring Boot.UserApplication" />
         <item itemvalue="Spring Boot.PayApplication" />
-        <item itemvalue="JUnit.EsTest.EsInit" />
       </list>
     </recent_temporary>
   </component>
@@ -300,21 +304,14 @@
       <workItem from="1746249440282" duration="4167000" />
       <workItem from="1746259987920" duration="3000" />
       <workItem from="1746260550437" duration="12218000" />
+      <workItem from="1746331718835" duration="10000" />
+      <workItem from="1746334457883" duration="118000" />
+      <workItem from="1746334822296" duration="4579000" />
+      <workItem from="1746419093167" duration="140000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cc-services/cc-item-service/src/main/java/com/cc/item/service/impl/SearchServiceImpl.java</url>
-          <line>124</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
